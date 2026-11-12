@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "8.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0, 0, 0, 0"
+			"$rowSpecs": "0, 0, 0"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"text": "Ingrese la posicion de fibonnaci:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridwidth": 2
+				"hAlign": 2
+				"vAlign": 1
+				"insets": new java.awt.Insets( 75, 34, 0, 0 )
+				"ipadx": 12
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "pos"
+				"columns": 4
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "posActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridheight": 2
+				"hAlign": 2
+				"vAlign": 1
+				"insets": new java.awt.Insets( 70, 42, 0, 66 )
+				"ipadx": 7
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "res"
+				"editable": false
+				"columns": 10
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridy": 2
+				"hAlign": 2
+				"vAlign": 1
+				"insets": new java.awt.Insets( 49, 39, 0, 0 )
+				"ipadx": 7
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn"
+				"text": "Calcular"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"gridwidth": 2
+				"hAlign": 2
+				"vAlign": 1
+				"insets": new java.awt.Insets( 49, 76, 128, 0 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
