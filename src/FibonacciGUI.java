@@ -18,6 +18,7 @@ public class FibonacciGUI extends javax.swing.JFrame {
      */
     public FibonacciGUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
