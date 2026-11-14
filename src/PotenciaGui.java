@@ -11,7 +11,7 @@ public class PotenciaGui extends javax.swing.JFrame {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(PotenciaGui.class.getName());
 
-    public static int Potencia(int a, int n) {
+    public static double Potencia(double a, int n) {
         if (n == 0) {
             return 1;
         }
@@ -112,10 +112,10 @@ public class PotenciaGui extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         try {
-            int base = Integer.parseInt(Base.getText().trim());
+            double base = Double.parseDouble(Base.getText().trim());
             int exponencial = Integer.parseInt(Exponencial.getText().trim());
             if (exponencial >= 0) {
-                int resultado = Potencia(base, exponencial);
+                Double resultado = Potencia(base, exponencial);
                 jResultado.setText(String.valueOf(resultado));
             } else {
                 javax.swing.JOptionPane.showMessageDialog(
