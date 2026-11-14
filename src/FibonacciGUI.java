@@ -27,47 +27,60 @@ public class FibonacciGUI extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    // Generated using JFormDesigner Evaluation license - unknown
     private void initComponents() {
-        jLabel1 = new JLabel();
-        pos = new JTextField();
-        res = new JTextField();
-        btn = new JButton();
+        java.awt.GridBagConstraints gridBagConstraints;
 
-        //======== this ========
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        var contentPane = getContentPane();
-        contentPane.setLayout(new GridBagLayout());
+        jLabel1 = new javax.swing.JLabel();
+        pos = new javax.swing.JTextField();
+        res = new javax.swing.JTextField();
+        btn = new javax.swing.JButton();
 
-        //---- jLabel1 ----
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.GridBagLayout());
+
         jLabel1.setText("Ingrese la posicion de fibonnaci:");
-        contentPane.add(jLabel1, new GridBagConstraints(0, 0, 2, 1, 0.0, 0.0,
-            GridBagConstraints.NORTHWEST, GridBagConstraints.NONE,
-            new Insets(75, 34, 0, 0), 12, 0));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 12;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(75, 34, 0, 0);
+        getContentPane().add(jLabel1, gridBagConstraints);
 
-        //---- pos ----
         pos.setColumns(4);
-        pos.addActionListener(e -> posActionPerformed(e));
-        contentPane.add(pos, new GridBagConstraints(3, 0, 1, 2, 0.0, 0.0,
-            GridBagConstraints.NORTHWEST, GridBagConstraints.NONE,
-            new Insets(70, 42, 0, 66), 7, 0));
+        pos.addActionListener(this::posActionPerformed);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(70, 42, 0, 66);
+        getContentPane().add(pos, gridBagConstraints);
 
-        //---- res ----
         res.setEditable(false);
         res.setColumns(10);
-        res.addActionListener(e -> resActionPerformed(e));
-        contentPane.add(res, new GridBagConstraints(3, 2, 1, 1, 0.0, 0.0,
-            GridBagConstraints.NORTHWEST, GridBagConstraints.NONE,
-            new Insets(49, 39, 0, 0), 7, 0));
+        res.addActionListener(this::resActionPerformed);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(49, 39, 0, 0);
+        getContentPane().add(res, gridBagConstraints);
 
-        //---- btn ----
         btn.setText("Calcular");
-        btn.addActionListener(e -> btnActionPerformed(e));
-        contentPane.add(btn, new GridBagConstraints(0, 2, 2, 1, 0.0, 0.0,
-            GridBagConstraints.NORTHWEST, GridBagConstraints.NONE,
-            new Insets(49, 76, 128, 0), 0, 0));
+        btn.addActionListener(this::btnActionPerformed);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(49, 76, 128, 0);
+        getContentPane().add(btn, gridBagConstraints);
+
         pack();
-        setLocationRelativeTo(getOwner());
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
@@ -116,10 +129,9 @@ public class FibonacciGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - unknown
-    private JLabel jLabel1;
-    private JTextField pos;
-    private JTextField res;
-    private JButton btn;
+    private javax.swing.JButton btn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField pos;
+    private javax.swing.JTextField res;
     // End of variables declaration//GEN-END:variables
 }
