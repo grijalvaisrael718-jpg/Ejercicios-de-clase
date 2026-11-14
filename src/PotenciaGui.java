@@ -21,6 +21,7 @@ public class PotenciaGui extends javax.swing.JFrame {
     public PotenciaGui() {
 
         initComponents();
+        setLocationRelativeTo(null);
 
     }
 
@@ -46,6 +47,7 @@ public class PotenciaGui extends javax.swing.JFrame {
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(this::btnCalcularActionPerformed);
 
+        jResultado.setEditable(false);
         jResultado.addActionListener(this::jResultadoActionPerformed);
 
         Base.addActionListener(this::BaseActionPerformed);
